@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>בחירת שיר חופה!</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h1 th:text="${title}" class="title">
+        <span>title will display here</span>
+    </h1>
+    <p>
+        עוד מעט זה יקרה, הכוס תישבר וחגיגת האהבה שלנו תצא לדרך...
+        אז כדי להוסיף להתרגשות (וגם לבדוק כמה אתם מכירים אותנו באמת) רצינו לתת לכם את האפשרות לבחור את השיר שיכניס אותנו לתוך חיי הנישואין!
+        סומכים עליכם :)
+    </p>
+    <form th:action="@{/register}" method="post">
+        <label>מספר טלפון נייד:<input type="tel" pattern="[0][5][0-9]{8}" required name="phoneNumber" class="form-control"> </label>
+        <span th:text="${subtitle}" class="subtitle">subtitle will display here</span>
+        <input type="submit" value="אישור" class="btn btn-success">
+    </form>
+</div>
+</body>
+</html>

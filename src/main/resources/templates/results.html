@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>בחירת שיר חופה!</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div th:switch="${songs}">
+    <h2 th:case="null">No songs yet!</h2>
+    <div th:case="*" class="container">
+        <h1 class="title">תוצאות:</h1>
+        <ol>
+            <li class="song-item" th:each="song:${songs}">
+                <span class="result" th:text="${song.songName + ': '}">song name</span>
+                <span class="result result-number" th:text="${song.votes}">song votes</span>
+            </li>
+        </ol>
+    </div>
+</div>
+</body>
+</html>
