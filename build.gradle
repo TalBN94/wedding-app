@@ -3,9 +3,6 @@ plugins {
 	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
 	id 'java'
 }
-processResources {
-	expand(project.properties)
-}
 
 group = 'com.songvoting'
 version = '0.0.1-SNAPSHOT'
