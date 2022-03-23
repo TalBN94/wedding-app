@@ -42,10 +42,12 @@ label, input {
 
 input {
     height: 7rem;
-    font-size: 3.5rem;
-    text-align: left;
+    font-size: 5rem;
+    text-align: center;
     padding-left: 1rem;
     padding-right: 1rem;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
 }
 
 .subtitle {
@@ -57,8 +59,10 @@ input {
     width: 80%;
     height: 5rem;
     border-radius: 5rem;
-    font-size: 3rem;
+    font-size: 3.5rem;
     text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
 }
 
 .result {
