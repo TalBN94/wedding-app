@@ -14,7 +14,7 @@
         <div class="container" th:case="*">
             <h1 class="title">רשימת השירים</h1>
             <ol style="list-style-type: none; padding: 0;">
-                <li class="song-item" th:each="song:${songs}">
+                <li th:each="song:${songs}">
                     <form th:action="@{/votes/{id}(id=${song.id})}" method="post">
                         <span th:text="${song.songName}">song name</span>
                         <input type="submit" value="בחר" class="btn btn-success"/>

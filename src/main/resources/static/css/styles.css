@@ -2,7 +2,7 @@
     color: #cb78cc;
     font-family: 'Amatic SC', cursive;
     font-weight: 700;
-    font-size: 64px;
+    font-size: 10rem;
     margin-block-start: 0;
     margin-block-end: 0;
     text-decoration: underline;
@@ -14,6 +14,7 @@
     flex: 1;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 form {
@@ -22,7 +23,8 @@ form {
     flex-direction: column;
     font-family: 'Amatic SC', cursive;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 5.5rem;
+    text-align: center;
 }
 
 ul {
@@ -31,29 +33,39 @@ ul {
 }
 
 label, input {
-    display: block;
-    height: 1.5em;
-    margin-bottom: 10px;
+    display: inline-block;
+    height: 4rem;
+    width: 90%;
+    margin-bottom: 10rem;
+    align-self: center;
+}
+
+input {
+    height: 7rem;
+    font-size: 3.5rem;
+    text-align: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .subtitle {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.song-item {
-    margin-bottom: 15px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .btn {
-    width: 50%;
-    height: 2.5em;
-    border-radius: 5px;
+    width: 80%;
+    height: 5rem;
+    border-radius: 5rem;
+    font-size: 3rem;
+    text-align: center;
 }
 
 .result {
     font-family: 'Amatic SC', cursive;
-    font-size: 36px;
+    font-size: 5rem;
+    text-align: center;
+    list-style-position: inside;
 }
 
 .result-number {
@@ -63,7 +75,7 @@ label, input {
 p {
     font-family: 'Amatic SC', cursive;
     font-weight: 700;
-    font-size: 42px;
+    font-size: 6rem;
     color: #5493ff;
     text-align: center;
 }
