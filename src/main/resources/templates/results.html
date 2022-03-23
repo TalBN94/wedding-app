@@ -12,9 +12,9 @@
 <div th:switch="${songs}">
     <h2 th:case="null">No songs yet!</h2>
     <div th:case="*" class="container">
-        <h1 class="title">תוצאות:</h1>
+        <h1 class="title">תוצאות</h1>
         <ol>
-            <li class="song-item" th:each="song:${songs}">
+            <li class="song-item result" th:each="song:${songs}">
                 <span class="result" th:text="${song.songName + ': '}">song name</span>
                 <span class="result result-number" th:text="${song.votes}">song votes</span>
             </li>

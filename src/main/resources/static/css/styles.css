@@ -22,7 +22,7 @@ form {
     flex-direction: column;
     font-family: 'Amatic SC', cursive;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 36px;
 }
 
 ul {
@@ -32,6 +32,8 @@ ul {
 
 label, input {
     display: block;
+    height: 1.5em;
+    margin-bottom: 10px;
 }
 
 .subtitle {
@@ -45,13 +47,13 @@ label, input {
 
 .btn {
     width: 50%;
+    height: 2.5em;
     border-radius: 5px;
 }
 
 .result {
     font-family: 'Amatic SC', cursive;
-    font-weight: 700;
-    font-size: 24px;
+    font-size: 36px;
 }
 
 .result-number {
@@ -67,7 +69,7 @@ p {
 }
 
 html {
-    background: url("../assets/background.jpeg") no-repeat;
+    background: url("../assets/background.jpeg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
