@@ -23,7 +23,7 @@ public class UserController {
 
     @GetMapping
     public String template(Model model) {
-        model.addAttribute("title", "בחירת שיר החופה!");
+        model.addAttribute("title", "בחירת שיר שבירת הכוס!");
         model.addAttribute("subtitle", "(לא לדאוג, אנחנו לא נתקשר...)");
         return "login";
     }
