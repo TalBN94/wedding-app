@@ -19,7 +19,7 @@ public class VoteApplication {
 	@Bean
 	ApplicationRunner init(SongRepository repository) {
 		String[] data = {"ימים יפים - מועדון הקצב של אביהו פנחסוב",
-				"שיר מספר 2", "שיר מספר 3"};
+				"מצילה אותי - מועדון הקצב של אביהו פנחסוב", "Uptown Funk - Bruno Mars"};
 		return args -> {
 			Stream.of(data).forEach(name -> {
 				repository.save(Song.builder().songName(name).votes(0).build());
